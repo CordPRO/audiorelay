@@ -7,7 +7,7 @@ import javax.xml.ws.Endpoint;
 
 public class Server {
     public static void main(String[] args) {
-        Endpoint.publish("http://localhost:8000/audiorelay", new FrameBufferImpl(5));
-
+        Endpoint.publish("http://0.0.0.0:8000/audiorelay", new FrameBufferImpl(5));
+        Endpoint.publish("http://0.0.0.0:8000/screenrelay", new FrameBufferImpl(2));
     }
 }

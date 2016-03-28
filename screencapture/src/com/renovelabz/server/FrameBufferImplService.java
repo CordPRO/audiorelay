@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "FrameBufferImplService", targetNamespace = "http://server.renovelabz.com/", wsdlLocation = "http://localhost:8000/audiorelay?wsdl")
+@WebServiceClient(name = "FrameBufferImplService", targetNamespace = "http://server.renovelabz.com/", wsdlLocation = "http://localhost:8000/screenrelay?wsdl")
 public class FrameBufferImplService
     extends Service
 {
@@ -30,7 +30,7 @@ public class FrameBufferImplService
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("http://192.168.1.35:8000/audiorelay?wsdl");
+            url = new URL("http://localhost:8000/screenrelay?wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }
