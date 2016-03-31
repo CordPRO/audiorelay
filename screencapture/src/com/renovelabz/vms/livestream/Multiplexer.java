@@ -1,3 +1,5 @@
+package com.renovelabz.vms.livestream;
+
 import com.renovelabz.server.FrameBuffer;
 import com.renovelabz.server.FrameBufferImplService;
 import com.renovelabz.server.FramePullResult;

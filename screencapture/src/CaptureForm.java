@@ -49,10 +49,10 @@ public class CaptureForm extends JFrame {
         FrameBuffer frameBuffer2 = service2.getFrameBufferImplPort();
         FrameBuffer frameBuffer = service.getFrameBufferImplPort();
 
-        cap = new ScreenCapturer(frameBuffer,1000);
+        cap = new ScreenCapturer(frameBuffer,5000);
         cap2 = new ScreenCapturer(frameBuffer2,100);
 
-        recv = new ScreenReceiver(outputBuffer,50);
+        recv = new ScreenReceiver(outputBuffer,1);
 
         recv.addScreenReceivedListener(new ScreenReceiver.ScreenReceivedListener() {
             @Override
